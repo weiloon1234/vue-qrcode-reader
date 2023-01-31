@@ -6,6 +6,16 @@ export class DropImageFetchError extends Error {
   }
 }
 
+export class DropImageDecodeError extends Error {
+  constructor() {
+    super(
+      "image invalid."
+    );
+
+    this.name = "DropImageDecodeError";
+  }
+}
+
 export class StreamApiNotSupportedError extends Error {
   constructor() {
     super("this browser has no Stream API support");
